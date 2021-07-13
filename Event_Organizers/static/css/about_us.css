@@ -1,0 +1,185 @@
+.about-header{
+    padding: 80px 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+}
+
+.about-header h4 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.about-header h2 {
+    color: #fff;
+    font-size: 52px;
+    padding: 35px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.about-header h2 span {
+    color: #ffbe30;
+    font-weight: 700;
+}
+
+
+
+
+/* Vision Mission section */
+
+.about-mission-vision{
+    padding: 80px 0;
+}
+
+.about-intro h5{
+    color: #8e8e8e;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.about-intro h2{
+    font-size: 48px;
+    color: #333;
+}
+
+.about-intro .btn {
+    background: linear-gradient( to top left, #ff3e00, #ffbe30);
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px #ffbe30 solid;
+    transition: 0.3s ease;
+    border-radius: 50px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 20px #ccc;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 30px;
+    z-index:1;
+    position: relative;
+}
+
+.about-intro .btn:hover{
+    transition: 0.3s;
+    background: linear-gradient( to bottom right, #ff3e00, #ffbe30);
+}
+
+.about-mission h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.about-mission h3:after{
+    content:'';
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    background-color: #ffbe30;
+    top: 20px;
+    left: 41%;
+}
+
+.about-vision h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.about-vision h3:after{
+    content:'';
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    background-color: #ffbe30;
+    top: 20px;
+    left: 41%;
+}
+
+.adv-heading {
+    color: #8e8e8e;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.adv-head h2 {
+    font-size: 48px;
+    color: #333;
+}
+
+.meet-team {
+    text-align: right;
+}
+
+.meet-team .btn {
+    Border: 2px solid #ffbe30;
+    color: #333;
+    border-radius: 50px;
+    padding: 14px;
+}
+
+.meet-team .btn:hover{
+    background: linear-gradient(to top left, #ff3e00, #ffbe30);
+    color: #ffbe30;
+    transition: 0.3s;
+}
+
+.box-row-1 {
+    padding: 40px 0;
+}
+
+.box-row-2 {
+    padding: 30px 0;
+}
+
+/* Testimonials */
+
+.testimonials{
+    padding: 60px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonials-head h4 {
+    color: #555555;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.testimonials-head h2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin: 20px 0 50px;
+    color: #333;
+}
+
+.client-name {
+    color: #ffbe30;
+    font-size: 28px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.client-testimonial{
+    font-size:19px;
+}
+
+.client-testimonial span {
+    color: #ffbe30;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    top: 24%;
+    bottom: 65%;
+    width: 4%;
+    border: 1px transparent solid;
+    border-radius: 50px;
+    background-color: #000;
+}

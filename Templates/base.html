@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	  
+	  <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	  
+	  <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
+	  
+	  <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+	  
+	  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+	  
+	  <link rel="stylesheet" href="{% static 'css/all_forms.css' %}">
+	  
+	  <link rel="stylesheet" href="{% static 'css/about_us.css' %}">
+	  
+	  <link rel="stylesheet" href="{% static 'css/services.css' %}">
+	  
+	  <style>
+	      /* Home Heading Section Bg-img */
+		  .header{
+			  background-image: url("{% static 'background-images/section-1-bg-2.jpg' %}");
+		  }
+		  
+		  /* Home Staff Section Bg-img */
+		  .staff{
+		      background-image: url("{% static 'background-images/staff.png' %}");
+		  }
+		  
+		  /* Register and Login page Bg-img */
+		  .reg-login{
+		      background-image: url("{% static 'background-images/reg-login-bg.jpg' %}");
+		  }
+		  
+		  /* About Heading Section Bg-img */
+		  .about-header{
+			  background-image: url("{% static 'background-images/Contact-bg.jpg' %}");
+		  }
+		  
+		  /* Services header section bg-img */
+		  .services-header{
+              background-image: url("{% static 'background-images/Contact-bg.jpg' %}");
+          }
+		  
+		  /* Contact header section bg-img */
+		  .contact-header{
+              background-image: url("{% static 'background-images/Contact-bg.jpg' %}");
+          }
+          
+          /* Business Form header section bg-img */
+		  .business-header{
+              background-image: url("{% static 'background-images/business-form-bg.jpg' %}");
+          }
+          
+          /* Cultural Form header section bg-img */
+		  .cultural-header{
+              background-image: url("{% static 'background-images/cultural-form-bg.jpg' %}");
+          }
+          
+          /* Charity Form header section bg-img */
+		  .charity-header{
+              background-image: url("{% static 'background-images/charity-form-bg.jpg' %}");
+          }
+          
+          /* Seminar Form header section bg-img */
+		  .seminar-header{
+              background-image: url("{% static 'background-images/seminar-form-bg.jpg' %}");
+          }
+          
+          /* Family Form header section bg-img */
+		  .family-header{
+              background-image: url("{% static 'background-images/family-form-bg.jpg' %}");
+          }
+          
+          /* About Us page Testimonials section bg */
+          .testimonials{
+              background-image: url("{% static 'background-images/clients-testimonials-bg.png' %}");
+          }
+          
+          /* Reply Page head bg */
+          .reply-head{
+              background-image: url("{% static 'background-images/clients-testimonials-bg.png' %}");
+          }
+          
+	  </style>
+	  
+  </head>
+  <body>
+    {% include 'navigation.html' %}
+    
+    {% block content %}
+    
+    
+    
+    {% endblock %}
+    
+    {% include 'footer.html' %}
+    
+    
+    
+    
+    
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+    
+  
+      <script>
+			$(document).ready(function() {
+	
+				$(".owl-carousel").owlCarousel({
+				
+				autoPlay: 5500,
+				items : 3,
+				itemsDesktop : [1199,3],
+				itemsDesktopSmall : [979,3],
+				center: true,
+				nav:true,
+				loop:true,
+				responsive: {
+				600: {
+				items: 3
+				}
+				}
+				
+				});
+				
+				});
+	  </script>
+  
+  </body>
+</html>

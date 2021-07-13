@@ -1,0 +1,330 @@
+/* Register and login page */
+.reg-login {
+    padding: 70px 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.left-reg-login {
+    background: linear-gradient(to top right, #ff3e00, #ffbe30);
+    padding: 85px 30px;
+}
+
+.left-reg-login i {
+    transform: rotate(-90deg);
+    color: #fff;
+}
+
+.left-reg-login h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    padding: 50px 0 30px;
+}
+
+.left-reg-login p {
+    color: #fff;
+    font-size: 20px;
+    padding: 0 0 30px;
+}
+
+.left-reg-login .btn {
+    border: 3px #ffbe30 solid;
+    border-radius: 50px;
+    background-color: #dddddd;
+    color: #333;
+}
+
+.left-reg-login .btn:hover {
+    background-color: #ffbe30;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.reg-login .reg-login-form {
+    background: linear-gradient(to top left, #ff3e00, #ffbe30);
+    padding: 70px 0;
+}
+
+.reg-login-form h2 {
+    color: #fff;
+    padding: 0 0 30px;
+}
+
+.reg-login .reg-login-form form input{
+    width: 50%;
+    border: 3px solid #ffbe30;
+    border-radius: 50px;
+    padding: 5px 40px;
+    font-size: 18px;
+}
+
+.reg-login .reg-login-form form .btn {
+    width: 50%;
+    border: 3px solid #ffbe30;
+    border-radius: 50px;
+    background-color: #dddddd;
+    color: #333;
+}
+
+.reg-login-form form .btn:hover {
+    background: linear-gradient(to top right, #ff3e00, #ffbe30);
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+
+
+/*Contact form */
+.contact-header{
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-transform: uppercase;
+	background-attachment: fixed;
+}
+
+.contact-header h2{
+    font-size: 48px;
+}
+
+.contact-header h2 span{
+    color: #ffbe30;
+    font-weight: 700;
+}
+
+.contact-form{
+    background-color: #fff;
+}
+
+.contact-form h3{
+    font-size: 24px;
+    font-weight: 400;
+    color: #818181;
+    text-transform: uppercase;
+}
+
+.contact-form h2 {
+    font-size: 48px;
+    color: #3e3e3e;
+    font-weight: 400;
+}
+
+.contact-form h2 span {
+    font-weight: 700;
+}
+
+.contact-form .btn-primary{
+    background: linear-gradient( to top left, #ff3e00, #ffbe30);
+    border: 1px #ffbe30 solid;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.contact-form .btn-primary:hover{
+    transition: 0.3s;
+    background: linear-gradient( to bottom right, #ff3e00, #ffbe30);
+}
+
+.contact-form .btn-secondary{
+    background: linear-gradient( to bottom right, #ff3e00, #ffbe30);
+    border: 1px #ffbe30 solid;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.contact-form .btn-secondary:hover{
+    transition: 0.3s;
+    background: linear-gradient( to top left, #ff3e00, #ffbe30);
+}
+
+
+
+
+/* Business Forms */
+.business-header{
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+    text-transform: uppercase;
+	background-attachment: fixed;
+}
+
+.business-header h2{
+    font-size: 48px;
+    color: #333;
+}
+
+.business-header h2 span{
+    color: #ffbe30;
+    font-weight: 700;
+}
+
+
+
+
+/* Cultural Forms Css */
+
+.cultural-header{
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-transform: uppercase;
+	background-attachment: fixed;
+}
+
+.cultural-header h2{
+    font-size: 48px;
+}
+
+.cultural-header h2 span{
+    color: #ffbe30;
+    font-weight: 700;
+}
+
+
+
+
+/* Charity Forms Css */
+
+.charity-header{
+    padding: 70px 0;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-transform: uppercase;
+	background-attachment: fixed;
+}
+
+.charity-header h2{
+    font-size: 48px;
+}
+
+.charity-header h2 span{
+    color: #ffbe30;
+    font-weight: 700;
+}
+
+.donations {
+    padding: 40px;
+    background: linear-gradient(to top left, #ff3e00, #ffbe30);
+    border-radius: 4px;
+    margin-top: 70px;
+}
+
+.donations h3{
+    color: #fff;
+}
+
+.donations p{
+    font-size: 13px;
+    color: #fff;
+}
+
+button.btn.donations-btn {
+    border: 2px #ffbe30 solid;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.donations-btn:hover {
+    background-color: #ffbe30;
+    transition: 0.3s;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 35%);
+}
+
+
+
+
+
+/* Seminar Forms Css */
+
+.seminar-header{
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-transform: uppercase;
+	background-attachment: fixed;
+}
+
+.seminar-header h2{
+    font-size: 48px;
+}
+
+.seminar-header h2 span{
+    color: #ffbe30;
+    font-weight: 700;
+}
+
+
+
+
+
+/* Family Forms Css */
+
+.family-header{
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-transform: uppercase;
+	background-attachment: fixed;
+}
+
+.family-header h2{
+    font-size: 48px;
+}
+
+.family-header h2 span{
+    color: #ffbe30;
+    font-weight: 700;
+}
+
+
+
+
+/* Reply Page */
+
+.reply-head {
+    padding: 70px 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reply-head h1 {
+    font-size: 90px;
+    color: #376894;
+}
+
+.reply-head p {
+    font-size: 18px;
+    color: #30649c;
+    padding: 50px 0 25px;
+}
+
+.reply-head .btn {
+    background-color: #b49f70;
+    color: #fff;
+    border: 3px #ffbe30 solid;
+    border-radius: 30px;
+}
+
+.reply-head .btn:hover {
+    background-color: #ffbe30;
+    transition: 0.3s;
+}

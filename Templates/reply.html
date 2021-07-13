@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+	<section class="reply-head">
+		<div class="container">
+			<div class="row">
+					<div class="col-12">
+						<div class="text-center">
+							<h1>Thank You</h1>
+						</div>
+					</div>
+				</div>
+			
+			<div class="row">
+				<div class="col-12">
+					<p class="text-center">We will contact you shortly after getting a
+						catalogue according to your preferences.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12">
+					<div class="text-center">
+						<a href="{% url 'Home' %}"><button class="btn btn-lg">Back to Home
+						</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section class="services">
+		<div class="jumbotron">
+			<hr class="section-border">
+			<div class="container">
+					
+				<!-- services header -->
+				<div class="row">
+					<div class="col-6">
+						<div class="row">
+							<div class="col-12">
+								<h4 class="our-serv">Recommended Content</h4>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-12">
+								<h3 class="expertize">Book other <strong>Events</strong></h3>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-6">
+							<div class="text-center">
+								<a class="serv-link" href="#"><button
+									class="btn btn-lg serv-btn">Name Services</button></a>
+							</div>
+						</div>
+				</div>
+				<!--end services header -->
+				
+				<!-- owl carousel start -->
+				<div class="row">
+					    <div class="col-lg-12 grid-margin">
+			                <div class="owl-carousel">
+				                <!-- owl carousel family -->
+				                <div class="row">
+					                <div class="col-xs-12">
+			                            <div class="serv-item">
+				                            <span>Name Events</span>
+				                            <img src="{% static 'Event_App/images/Home/images/wedding-serv.jpg' %}">
+				                            
+				                            <div class="serv-item-content">
+					                            <h4>Family Functions</h4>
+					                            <button class="btn"><a href="{% url 'Family_Events_Form' %}">Book Event</a></button>
+				                            </div>
+				                            
+			                            </div>
+					                </div>
+				                </div>
+				                <!-- end of owl carousel family -->
+				                
+				                <!-- owl carousel business -->
+	                            <div class="row">
+					                <div class="col-xs-12">
+			                            <div class="serv-item">
+				                            <span>Name Events</span>
+				                            <img src="{% static 'Event_App/images/Home/images/business-serv.jpg' %}">
+				                            
+				                            <div class="serv-item-content">
+					                            <h4>Business Conference</h4>
+					                            <button class="btn"><a href="{% url 'Business_Events_Form' %}">Book Event</a></button>
+				                            </div>
+			                            </div>
+					                </div>
+				                </div>
+				                <!-- end of owl carousel business -->
+				                
+				                <!-- owl carousel cultural -->
+	                            <div class="row">
+					                <div class="col-xs-12">
+			                            <div class="serv-item">
+				                            <span>Name Events</span>
+				                            <img src="{% static 'Event_App/images/Home/images/cultural-serv.jpg' %}">
+				                            
+				                            <div class="serv-item-content">
+					                            <h4>Cultural Events</h4>
+					                            <button class="btn"><a href="{% url 'Cultural_Events_Form' %}">Book Event</a></button>
+				                            </div>
+			                            </div>
+					                </div>
+				                </div>
+				                <!-- end of owl carousel cultural -->
+				                
+				                <!-- owl carousel charity -->
+	                            <div class="row">
+					                <div class="col-xs-12">
+			                            <div class="serv-item">
+				                            <span>Name Events</span>
+				                            <img src="{% static 'Event_App/images/Home/images/marathon-serv.jpg' %}">
+				                            
+				                            <div class="serv-item-content">
+					                            <h4>Charity Events</h4>
+					                            <button class="btn"><a href="{% url 'Charity_Events_Form' %}">Book Event</a></button>
+				                            </div>
+			                            </div>
+					                </div>
+				                </div>
+				                <!-- end of owl carousel charity -->
+				                
+				                <!-- owl carousel seminars -->
+	                            <div class="row">
+					                <div class="col-xs-12">
+			                            <div class="serv-item">
+				                            <span>Name Events</span>
+				                            <img src="{% static 'Event_App/images/Home/images/seminar-serv.jpg' %}">
+				                            
+				                            <div class="serv-item-content">
+					                            <h4>Seminars</h4>
+					                            <button class="btn"><a href="{% url 'Seminars_Form' %}">Book Event</a></button>
+				                            </div>
+			                            </div>
+					                </div>
+				                </div>
+				                <!-- end of owl carousel seminars -->
+			                </div>
+			            </div>
+					</div>
+				<!-- owl carousel end -->
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

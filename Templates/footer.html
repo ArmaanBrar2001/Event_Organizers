@@ -1,0 +1,228 @@
+{% load static %}
+{% for home in home %}
+	<footer class="foot">
+		<div class="container">
+			<div class="row">
+				
+				<!-- column1 footer -->
+				<div class="col-sm-4">
+					<!-- Logo item Footer -->
+					<div class="logo">
+						<div class="row">
+							<div class="col-12">
+								<div class="row">
+									<div class="col-3">
+										{{ home.company_logo }}
+									</div>
+									
+									<div class="col-9">
+										<div class="row">
+											<div class="col-12">
+												<h3>{{ home.company_name }}</h3>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-12">
+												<h5>Events Management</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Logo item Footer end -->
+					
+					<!-- network items footer -->
+					<div class="foot-network">
+						<!-- network footer heading -->
+						<div class="row">
+							<div class="col-12">
+								<div class="text-center">
+									<h3>Network</h3>
+								</div>
+							</div>
+						</div>
+						<!-- network footer heading end -->
+						
+						<!-- network footer icons -->
+						<div class="row">
+							<div class="col-2"></div>
+									
+							<div class="col-2">
+								<div class="text-center">
+									<a href="#>"><i class="fa fa-facebook-f fa-2x social-icons-footer"></i></a>
+								</div>
+							</div>
+							
+							<div class="col-2">
+								<div class="text-center">
+									<a href="3"><i class="fa fa-twitter fa-2x social-icons-footer"></i></a>
+								</div>
+							</div>
+									
+							<div class="col-2">
+								<div class="text-center">
+									<a href="#"><i class="fa fa-instagram fa-2x social-icons-footer"></i></a>
+								</div>
+							</div>
+									
+							<div class="col-2">
+								<div class="text-center">
+									<a href="#"><i class="fa fa-linkedin fa-2x social-icons-footer"></i></a>
+								</div>
+							</div>
+							
+							<div class="col-2"></div>
+						</div>
+						<!-- network footer icons end -->
+					</div>
+					<!-- network items footer end -->
+				</div>
+				<!-- column1 footer end -->
+				
+				<!-- column2 footer -->
+				<div class="col-sm-4">
+					<table class="footer-contact">
+								
+						<!-- Location Info -->
+						<tr class="footer-location">
+							
+							<!-- Location Info Icon -->
+							<td class="foot-icon">
+								<div class="text-center">
+									<i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+								</div>
+							</td>
+							<!-- Location Info Icon end -->
+							
+							<!-- Location Info Content -->
+							<td class="foot-contact-content">
+								<div class="text-center">
+									
+									<h6 class="contact-info-heading">
+										Location
+									</h6>
+									<h5 class="contact-info">
+										{{ home.address }}, {{ home.city }}
+									</h5>
+										
+								</div>
+							</td>
+							<!-- Location Info Content end -->
+						</tr>
+						<!-- Location Info End -->
+								
+						<!-- Mail Info -->
+						<tr class="footer-mail">
+									
+							<!-- Contact Info Icon -->
+							<td class="foot-icon">
+								<div class="text-center">
+									<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+								</div>
+							</td>
+							<!-- Contact Info Icon end -->
+							
+							<!-- Contact Info Content -->
+							<td class="foot-contact-content">
+								<div class="text-center">
+									
+									<h6 class="contact-info-heading">
+										Email
+									</h6>
+									
+									<h5 class="contact-info">
+										{{ home.email }}
+									</h5>
+									<!-- Contact Info Content end -->
+								</div>
+							</td>
+							<!-- Contact Info Content end-->
+						</tr>
+						<!-- Mail Info end -->
+								
+						<!-- phone info -->
+						<tr class="footer-phone">
+							<!-- Contact Info Icon -->
+							<td class="foot-icon">
+								<div class="text-center">
+									<i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+								</div>
+							</td>
+							<!-- Contact Info Icon end -->
+							
+							<!-- Contact Info Content -->
+							<td class="foot-contact-content">
+								<div class="text-center">
+									
+									<h6 class="contact-info-heading">
+										Phone
+									</h6>
+									
+									<h5 class="contact-info">
+										+{{ home.phone_code }}-{{ home.phone }}
+									</h5>
+											
+								</div>
+							</td>
+							<!-- Contact Info Content end -->
+						</tr>
+						<!-- Phone Info end -->
+					</table>
+				</div>
+				<!-- column2 footer end -->
+				
+				<!-- column3 footer -->
+				<div class="col-sm-4">
+					<div class="footer-links">
+						
+						<!-- Useful Links Heading -->
+						<div class="row">
+							<div class="col-12">
+								<h4>Useful Links</h4>
+							</div>
+						</div>
+						<!-- Useful Links Heading end -->
+						
+						<!-- Links -->
+						<ul class="foot-links">
+							<li>
+								<a href="{% url 'About' %}">About Us</a>
+							</li>
+							
+							<li>
+								<a href="{% url 'Contact_Info_Form' %}">Contact Us</a>
+							</li>
+							
+							<li>
+								<a href="{% url 'Business_Events_Form' %}">Business Events</a>
+							</li>
+							
+							<li>
+								<a href="{% url 'Family_Events_Form' %}">Family Functions</a>
+							</li>
+							
+							<li>
+								<a href="{% url 'Cultural_Events_Form' %}">Cultural Events</a>
+							</li>
+							
+							<li>
+								<a href="{% url 'Charity_Events_Form' %}">Charity Events</a>
+							</li>
+							
+							<li>
+								<a href="{% url 'Seminars_Form' %}">Seminars</a>
+							</li>
+						</ul>
+						<!-- Links end -->
+						
+					</div>
+				</div>
+				<!-- column3 footer end -->
+				
+			</div>
+		</div>
+	</footer>
+{% endfor %}

@@ -1,0 +1,633 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% for home in home %}
+{% for about in about %}
+	<section class="about-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="text-center">
+						<h4>All you need to know</h4>
+						<h2>About <span>{{ home.company_name }}</span></h2>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="about-mission-vision">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="about-intro">
+						<h5>We are {{ home.company_name }}</h5>
+						<h2><strong>No.1</strong> Events</h2>
+						<h2>Management</h2>
+						<a href="#"><button class="btn btn-lg">Get Started!</button></a>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="about-mission">
+						<h3>Our Mission</h3>
+						<p>{{ about.mission }}</p>
+						<p><strong><em>{{ about.mission_bold}}</em></strong></p>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="about-vision">
+						<h3>Our Vision</h3>
+						<p>{{ about.vision }}</p>
+						<p><strong><em>{{ about.vision_bold }}</em></strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="about-advantages">
+		<div class="jumbotron">
+			<hr class="section-border">
+			<div class="container">
+				
+				<div class="adv-head">
+					<div class="row">
+						<div class="col-sm-6">
+							<h5 class="adv-heading">Why Choose Us</h5>
+							<h2>Name <strong>Advantages</strong></h2>
+						</div>
+							
+						<div class="col-sm-6">
+							<div class="meet-team">
+								<a href="#"><button class="btn">Meet The Team</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- advantage boxes -->
+				<div class="row">
+					<div class="col-12">
+						<div class="box">
+							<div class="row box-row-1">
+								
+								<!-- expertize item-1 -->
+								<div class="col-sm-3">
+									<div class="box-content">
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<i class="fa fa-handshake-o fa-3x box-icon"
+													   aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<h4 class="box-text">Friendly Team </h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- expertize item-1 end -->
+								
+								<!-- expertize item-2 -->
+								<div class="col-sm-3">
+									<div class="box-content">
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<i class="fa fa-glass fa-3x box-icon"
+													   aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<h4 class="box-text">Unique Scenario </h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- expertize item-2 end -->
+								
+								<!-- expertize item-3 -->
+								<div class="col-sm-3">
+									<div class="box-content">
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<i class="fa fa-globe fa-3x box-icon"
+													   aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<h4 class="box-text">Perfect Venues </h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- expertize item-3 end -->
+								
+								<!-- expertize item-4 -->
+								<div class="col-sm-3">
+									<div class="box-content">
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<i class="fa fa-users fa-3x box-icon"
+													   aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<h4 class="box-text">Best Management </h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- expertize item-4 end -->
+								
+							</div>
+							
+							<div class="row box-row-2">
+								
+								<!-- expertize item-5 -->
+								<div class="col-sm-3">
+									<div class="box-content">
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<i class="fa fa-clock-o fa-3x box-icon"
+													   aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<h4 class="box-text">Unforgettable Times </h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- expertize item-5 end -->
+								
+								<!-- expertize item-6 -->
+								<div class="col-sm-3">
+									<div class="box-content">
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<i class="fa fa-volume-control-phone fa-3x box-icon" aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<h4 class="box-text">24/7 Support </h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- expertize item-6 end -->
+								
+								<!-- expertize item-7 -->
+								<div class="col-sm-3">
+									<div class="box-content">
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<i class="fa fa-lightbulb-o fa-3x box-icon" aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<h4 class="box-text">Brilliant Ideas </h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- expertize item-7 end -->
+								
+								<!-- expertize item-8 -->
+								<div class="col-sm-3">
+									<div class="box-content">
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<i class="fa fa-money fa-3x box-icon"
+													   aria-hidden="true"></i>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-12">
+												<div class="text-center">
+													<h4 class="box-text">Budget Management </h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- expertize item-8 end -->
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- advantage boxes end -->
+			</div>
+		</div>
+	</section>
+
+
+	<section class="testimonials">
+		<hr class="section-border">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="text-center">
+						<div class="testimonials-head">
+							<h4>Testimonials</h4>
+							<h2>Clients <strong>Testimonials</strong></h2>
+						</div>
+						
+						<div id="testimonials-carousel" class="carousel slide"
+						     data-ride="carousel">
+							
+							<ul class="carousel-indicators">
+								<li data-target="#testimonials-carousel" data-slide-to="0"
+								    class="active"></li>
+								<li data-target="#testimonials-carousel" data-slide-to="1"></li>
+								<li data-target="#testimonials-carousel" data-slide-to="2"></li>
+								<li data-target="#testimonials-carousel" data-slide-to="3"></li>
+							</ul>
+							
+							<div class="carousel-inner">
+								
+								<!-- testimonial 1 -->
+								<div class="carousel-item active">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										
+										<div class="col-sm-8">
+											<p class="client-testimonial"><span><i
+													class="fa fa-quote-left fa-2x"
+													aria-hidden="true"></i></span><br><br>
+												{{ about.testimonial1 }}
+												<br><br><span><i class="fa fa-quote-right fa-2x"
+												             aria-hidden="true"></i></span></p>
+										</div>
+										
+										<div class="col-sm-2"></div>
+									</div>
+									<h3 class="client-name">{{ about.client_name1 }}</h3>
+								</div>
+								<!-- testimonial 1 end -->
+								
+								<!-- testimonial 2 -->
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										
+										<div class="col-sm-8">
+											<p class="client-testimonial"><span><i
+													class="fa fa-quote-left fa-2x"
+													aria-hidden="true"></i></span><br><br>
+												{{ about.testimonial2 }}
+												<br><br><span><i class="fa fa-quote-right fa-2x"
+												          aria-hidden="true"></i></span></p>
+										</div>
+										
+										<div class="col-sm-2"></div>
+									</div>
+									<h3 class="client-name">{{ about.client_name2 }}</h3>
+								</div>
+								<!-- testimonial 2 end -->
+								
+								<!-- testimonial 3 -->
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										
+										<div class="col-sm-8">
+											<p class="client-testimonial"><span><i
+													class="fa fa-quote-left fa-2x"
+													aria-hidden="true"></i></span><br><br>
+												{{ about.testimonial3 }}
+												<br><br><span><i class="fa fa-quote-right fa-2x"
+														aria-hidden="true"></i></span></p>
+										</div>
+										
+										<div class="col-sm-2"></div>
+									</div>
+									<h3 class="client-name">{{ about.client_name3 }}</h3>
+								</div>
+								<!-- testimonial 3 end -->
+								
+								<!-- testimonial 4 -->
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-sm-2"></div>
+										
+										<div class="col-sm-8">
+											<p class="client-testimonial"><span><i
+													class="fa fa-quote-left fa-2x"
+													aria-hidden="true"></i></span><br><br>
+												{{ about.testimonial4 }}
+												<br><br><span><i class="fa fa-quote-right fa-2x"
+														aria-hidden="true"></i></span></p>
+										</div>
+										
+										<div class="col-sm-2"></div>
+									</div>
+									<h3 class="client-name">{{ about.client_name4 }}</h3>
+								</div>
+								<!-- testimonial 4 end -->
+								
+								<a class="carousel-control-prev" href="#testimonials-carousel"
+								   data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+							    <a class="carousel-control-next" href="#testimonials-carousel"
+							       data-slide="next">
+							        <span class="carousel-control-next-icon"></span>
+							    </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section class="staff">
+		<hr class="section-border">
+		<div class="container">
+			<div id="staff-carousel" class="carousel slide" data-ride="carousel">
+				
+				<ul class="carousel-indicators">
+					<li data-target="#staff-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#staff-carousel" data-slide-to="1"></li>
+					<li data-target="#staff-carousel" data-slide-to="2"></li>
+				</ul>
+				
+				<div class="carousel-inner">
+					<!-- staff carousel item-1 -->
+					<div class="carousel-item active">
+						<div class="row">
+							<div class="col-6">
+								<img class="staff-img" src="{{ home.pro_img1.url }}">
+								<span class="staff-name"><strong>{{ home.pro_first_name1 }}
+								</strong> {{ home.pro_last_name1 }}</span>
+							</div>
+							
+							<div class="col-6">
+								<div class="row">
+									<div class="col-12">
+										<h4 class="our-staff">OUR STAFF</h4>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-12">
+										<h3 class="job-title"><strong>{{ home.job_title1 }}
+										</strong></h3>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-12">
+										<span class="person-name">{{ home.pro_first_name1 }}
+											{{ home.pro_last_name1 }}</span>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-12">
+								        <p class="staff-intro">{{ home.pro_intro1 }}</p>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-12">
+										<h4 class="social-media-heading">Social Media</h4>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-1">
+										<div class="text-center">
+											<a href="#"><i class="fa fa-facebook-f fa-2x social-icons"></i></a>
+										</div>
+									</div>
+									
+									<div class="col-1">
+										<div class="text-center">
+											<a href="#"><i class="fa fa-twitter fa-2x social-icons"></i></a>
+										</div>
+									</div>
+									
+									<div class="col-1">
+										<div class="text-center">
+											<a href="#"><i class="fa fa-instagram fa-2x social-icons"></i></a>
+										</div>
+									</div>
+									
+									<div class="col-1">
+										<div class="text-center">
+											<a href="#"><i class="fa fa-linkedin fa-2x social-icons"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- staff carousel item-1 end -->
+					
+					<!-- staff carousel item-2 -->
+					<div class="carousel-item">
+						<div class="row">
+							<div class="col-6">
+								<img class="staff-img" src="{{ home.pro_img2.url }}">
+								<span class="staff-name"><strong>{{ home.pro_first_name2 }}
+								</strong> {{ home.pro_last_name2 }}</span>
+							</div>
+							
+							<div class="col-6">
+								<div class="row">
+									<div class="col-12">
+										<h4 class="our-staff">OUR STAFF</h4>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-12">
+										<h3 class="job-title"><strong>{{ home.job_title2 }}
+										</strong></h3>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-12">
+										<span class="person-name">{{ home.pro_first_name2 }}
+											{{ home.pro_last_name2 }}</span>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-12">
+								        <p class="staff-intro">{{ home.pro_intro2 }}</p>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-12">
+										<h4 class="social-media-heading">Social Media</h4>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-1">
+										<div class="text-center">
+											<a href="#"><i class="fa fa-facebook-f fa-2x social-icons"></i></a>
+										</div>
+									</div>
+									
+									<div class="col-1">
+										<div class="text-center">
+											<a href="#"><i class="fa fa-twitter fa-2x social-icons"></i></a>
+										</div>
+									</div>
+									
+									<div class="col-1">
+										<div class="text-center">
+											<a href="#"><i class="fa fa-instagram fa-2x social-icons"></i></a>
+										</div>
+									</div>
+									
+									<div class="col-1">
+										<div class="text-center">
+											<a href="#"><i class="fa fa-linkedin fa-2x social-icons"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- staff carousel item-2 end -->
+					
+					<!-- staff carousel item-3 -->
+					<div class="carousel-item">
+						<div class="row">
+							<div class="col-6">
+								<img class="staff-img" src="{{ home.pro_img3.url }}">
+								<span class="staff-name"><strong>{{ home.pro_first_name3 }}
+								</strong> {{ home.pro_last_name3 }}</span>
+							</div>
+							
+							<div class="col-6">
+								<div class="row">
+									<div class="col-12">
+										<h4 class="our-staff">OUR STAFF</h4>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-12">
+										<h3 class="job-title"><strong>{{ home.job_title3 }}
+										</strong></h3>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-12">
+										<span class="person-name">{{ home.pro_first_name3 }}
+											{{ home.pro_last_name3 }}</span>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-12">
+								        <p class="staff-intro">{{ home.pro_intro3 }}</p>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-12">
+										<h4 class="social-media-heading">Social Media</h4>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-1">
+										<div class="text-center">
+											<a href="#"><i class="fa fa-facebook-f fa-2x social-icons"></i></a>
+										</div>
+									</div>
+									
+									<div class="col-1">
+										<div class="text-center">
+											<a href="#"><i class="fa fa-twitter fa-2x social-icons"></i></a>
+										</div>
+									</div>
+									
+									<div class="col-1">
+										<div class="text-center">
+											<a href="#"><i class="fa fa-instagram fa-2x social-icons"></i></a>
+										</div>
+									</div>
+									
+									<div class="col-1">
+										<div class="text-center">
+											<a href="#"><i class="fa fa-linkedin fa-2x social-icons"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- staff carousel item-3 end -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endfor %}
+{% endfor %}
+
+{% endblock %}

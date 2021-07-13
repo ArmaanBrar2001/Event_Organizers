@@ -1,0 +1,263 @@
+/* ORANGE HEADER */
+.orange-header{
+	background: linear-gradient(to bottom right, #ff3e00, #ffbe30);
+	padding: 15px 0;
+	color: #fff;
+}
+
+.orange-header a{
+	color: #fff;
+}
+
+.right-side{
+    text-align: right;
+}
+
+/* NAV BAR */
+.navbar{
+    padding: 20px 0px 0px;
+}
+
+.navbar-nav{
+    margin-left: 200px;
+}
+
+.nav-brand{
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+.nav-logo {
+    width: 20%;
+    border-radius: 60%;
+    float: right;
+}
+
+.nav-link{
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    margin: auto 5px;
+    transition: 0.3s ease;
+}
+
+.nav-item:hover .nav-link{
+    color: #ffbe30;
+    transition: 0.3s;
+}
+
+hr{
+    border: 0;
+    border-top: 0;
+}
+
+/* NAV_ITEM_1 ANIMATION */
+.underline-1{
+    background-color: transparent;
+    height: 4px;
+}
+
+.nav-item-1:hover .underline-1{
+    animation-name: underline-1;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes underline-1{
+    0%{
+        background-color: #ffbe30;
+        width: 0px;
+        height: 4px;
+        transition: 0.3s ease;
+    }
+
+    100%{
+        background-color: #ffbe30;
+        width: 65px;
+        height: 4px;
+    }
+}
+
+/* NAV_ITEM_2 ANIMATION */
+.underline-2{
+    background-color: transparent;
+    height: 4px;
+}
+
+.nav-item-2:hover .underline-2{
+    animation-name: underline-2;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes underline-2{
+    0%{
+        background-color: #ffbe30;
+        width: 0px;
+        height: 4px;
+    }
+
+    100%{
+        background-color: #ffbe30;
+        width: 190px;
+        height: 4px;
+    }
+}
+
+/* NAV_ITEM_3 ANIMATION */
+.underline-3{
+    background-color: transparent;
+    height: 4px;
+}
+
+.nav-item-3:hover .underline-3{
+    animation-name: underline-3;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes underline-3{
+    0%{
+        background-color: #ffbe30;
+        width: 0px;
+        height: 4px;
+    }
+
+    100%{
+        background-color: #ffbe30;
+        width: 90px;
+        height: 4px;
+    }
+}
+
+/* NAV_ITEM_4 ANIMATION */
+.underline-4{
+    background-color: transparent;
+    height: 4px;
+}
+
+.nav-item-4:hover .underline-4{
+    animation-name: underline-4;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes underline-4{
+    0%{
+        background-color: #ffbe30;
+        width: 0px;
+        height: 4px;
+    }
+
+    100%{
+        background-color: #ffbe30;
+        width: 110px;
+        height: 4px;
+    }
+}
+
+
+
+
+/* FOOTER */
+
+.foot{
+    padding: 70px 0;
+    background-color: #333;
+}
+
+.logo{
+    padding-top: 25px;
+}
+
+.logo h3{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.logo h5 {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffbe30;
+    color: #fff;
+}
+
+.foot-network h3{
+    color: #fff;
+    font-weight: 700;
+    margin-top: 200px;
+}
+
+.social-icons-footer{
+    color: #818181;
+    transition: 0.3s ease;
+    padding: 20px 0;
+}
+
+.social-icons-footer:hover{
+    transform: Scale(1.3);
+    transition: 0.3s;
+    color: #ffbe30;
+}
+
+
+.footer-contact {
+    border-collapse: separate;
+    border-spacing: 0 40px;
+}
+
+.foot-icon {
+    padding: 15px;
+    background-color: #3b3b3b;
+    color: #cacaca;
+}
+
+.foot-contact-content {
+    padding: 15px;
+    background-color: #2e2e2e;
+}
+
+.contact-info-heading {
+    color: #efefef;
+}
+
+.contact-info {
+    color: #ffbe30;
+}
+
+.footer-links {
+    padding: 25px 0 0 0;
+}
+
+.footer-links h4 {
+    color: #fff;
+}
+
+.foot-links li {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 2px #818181 solid;
+    width: 60%;
+}
+
+.foot-links li a {
+    color: #818181;
+    transition: 0.3s ease;
+}
+
+.foot-links li:hover{
+    border-bottom: 2px #fff solid;
+}
+
+.foot-links li:hover a{
+    padding-left: 30px;
+    color: #ffbe30;
+    font-size: 19px;
+    transition: 0.3s;
+}
+
+

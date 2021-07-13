@@ -1,0 +1,217 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+{% for home in home %}
+{% for serv in serv %}
+
+	<section class="services-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="text-center">
+						<h4>All you need to know</h4>
+						<h2>About <span>{{ home.company_name }}</span></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="services-events">
+		<div class="container">
+			
+			<!-- Business Events -->
+			<div class="sub-events">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="back-img">
+							<img src="{% static 'images/business-serv-back.jpg' %}">
+						</div>
+						<div class="front-img">
+							<img src="{% static 'images/business-serv-front.jpg' %}">
+						</div>
+					</div>
+					
+					<div class="col-sm-1"></div>
+					
+					<div class="col-sm-6">
+						<h3>Business <strong>Conference</strong></h3>
+						<hr class="events-head-border">
+						<p>{{ serv.business_intro }}</p>
+						<ul>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.business_event_list1 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.business_event_list2 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.business_event_list3 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.business_event_list4 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.business_event_list5 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.business_event_list6 }}</li>
+						</ul>
+						<a href="{% url 'Business_Events_Form' %}"><button class="btn btn-lg">Make an
+							Event</button></a>
+					</div>
+				</div>
+			</div>
+			<!-- Business Events end -->
+			
+			<!-- Family Events -->
+			<div class="sub-events">
+				<div class="row">
+					<div class="col-sm-6">
+						<h3>Family <strong>Functions</strong></h3>
+						<hr class="events-head-border">
+						<p>{{ serv.family_intro }}</p>
+						<ul>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.family_event_list1 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.family_event_list2 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.family_event_list3 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.family_event_list4 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.family_event_list5 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.family_event_list6 }}</li>
+						</ul>
+						<a href="{% url 'Family_Events_Form' %}"><button
+								class="btn btn-lg btn-left">Make an Event</button></a>
+					</div>
+					
+					<div class="col-sm-5">
+						<div class="back-img">
+							<img src="{% static 'images/family-serv-back.jpg' %}">
+						</div>
+						<div class="front-img">
+							<img src="{% static 'images/family-serv-front.jpg' %}">
+						</div>
+					</div>
+					
+					<div class="col-sm-1"></div>
+				</div>
+			</div>
+			<!-- Family Events end -->
+			
+			<!-- Cultural Events -->
+			<div class="sub-events">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="back-img">
+							<img src="{% static 'images/cultural-serv-back.jpg' %}">
+						</div>
+						<div class="front-img">
+							<img src="{% static 'images/cultural-serv-front.jpg' %}">
+						</div>
+					</div>
+					
+					<div class="col-sm-1"></div>
+					
+					<div class="col-sm-6">
+						<h3>Cultural <strong>Events</strong></h3>
+						<hr class="events-head-border">
+						<p>{{ serv.cultural_intro }}</p>
+						<ul>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.cultural_event_list1 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.cultural_event_list2 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.cultural_event_list3 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.cultural_event_list4 }}</li>
+						</ul>
+						<a href="{% url 'Cultural_Events_Form' %}"><button class="btn btn-lg">Make an
+							Event</button></a>
+					</div>
+				</div>
+			</div>
+			<!-- Cultural Events end -->
+			
+			<!-- Seminar Events -->
+			<div class="sub-events">
+				<div class="row">
+					<div class="col-sm-6">
+						<h3><strong>Seminars</strong></h3>
+						<hr class="events-head-border">
+						<p>{{ serv.seminar_intro }}</p>
+						<ul>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.seminar_event_list1 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.seminar_event_list2 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.seminar_event_list3 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.seminar_event_list4 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.seminar_event_list5 }}</li>
+						</ul>
+						<a href="{% url 'Seminars_Form' %}"><button
+								class="btn btn-lg btn-left">Make an Event</button></a>
+					</div>
+					
+					<div class="col-sm-5">
+						<div class="back-img">
+							<img src="{% static 'images/seminar-serv-back.jpg' %}">
+						</div>
+						<div class="front-img">
+							<img src="{% static 'images/seminar-serv-front.jpg' %}">
+						</div>
+					</div>
+					
+					<div class="col-sm-1"></div>
+				</div>
+			</div>
+			<!-- Seminar Events end -->
+			
+			<!-- Charity Events -->
+			<div class="sub-events">
+				<div class="row">
+					<div class="col-sm-5">
+						<div class="back-img">
+							<img src="{% static 'images/charity-serv-back.jpg' %}">
+						</div>
+						<div class="front-img">
+							<img src="{% static 'images/charity-serv-front.jpg' %}">
+						</div>
+					</div>
+					
+					<div class="col-sm-1"></div>
+					
+					<div class="col-sm-6">
+						<h3>Fund Raising <strong>Events</strong></h3>
+						<hr class="events-head-border">
+						<p>{{ serv.charity_intro }}</p>
+						<ul>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.charity_event_list1 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.charity_event_list2 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.charity_event_list3 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.charity_event_list4 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.charity_event_list5 }}</li>
+							<li><i class="fa fa-arrow-circle-o-right fa-lg" aria-hidden="true"></i>
+ {{ serv.charity_event_list6 }}</li>
+						</ul>
+						<a href="{% url 'Charity_Events_Form' %}"><button class="btn btn-lg">Make an Event</button></a>
+					</div>
+				</div>
+			</div>
+			<!-- Charity Events end -->
+			
+		</div>
+	</section>
+
+{% endfor %}
+{% endfor %}
+{% endblock content %}
